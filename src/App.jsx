@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import io from "socket.io-client";
 import "./App.css";
 
-const socket = io("http://localhost:3001");
+const socket = io("https://omegleserver-production.up.railway.app/");
 const sessionId = Math.floor(Math.random() * 36 ** 7).toString(36);
 
 function App() {
